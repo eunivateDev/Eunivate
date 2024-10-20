@@ -35,7 +35,7 @@ export const createQuotation = async (req, res) => {
         console.log('Quotation token saved successfully:', quotationToken);
 
         // Create verification link
-        const verificationLink = `https://eunivatebe.vercel.app/api/users/quotation/confirm/${quotationToken.quotationToken}`;
+        const verificationLink = `https://eunivate-backend-56iw.onrender.com/api/users/quotation/confirm/${quotationToken.quotationToken}`;
 
         // Send the verification email
         try {
