@@ -21,7 +21,7 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://eunivate-ffyf.onrender.com", // Client URL
+    origin: "https://e-univate.vercel.app", // Client URL
     methods: ["GET", "POST", "DELETE", "PATCH", "UPDATE"]
   }
 });
@@ -97,7 +97,7 @@ app.get('/api/users/quotation/confirm/', confirmQuotationEmail);
 
 app.get('/quotation-complete', (req, res) => {
 // res.send('Quotation verification complete');
-res.redirect(`https://eunivate-ffyf.onrender.com/quotation-complete`);
+res.redirect(`https://e-univate.vercel.app/quotation-complete`);
 });
 
 
